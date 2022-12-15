@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="teampro.css">
+    <title>Apply</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="header">        
+            <a href="teampro.html"><img src="logo1.png" class="desktop"></a>
+            <p id="para">POSNE WEB</p>
+        </div>
+
+        <nav>
+            <div class="navides">
+                <a href="teampro.html">Home</a>
+                <a href="teampro.html#main">About Us</a>
+                <a href="team.html">Our Team</a>
+                <a href="https://www.google.com/maps/place/Presidential+Business+School/@27.6919587,85.3284864,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19b9406d1737:0xb1368a2c0f3f86f6!8m2!3d27.6919587!4d85.3306751">Find Us</a>
+                <a class="active" href="#" id="con">Apply</a>
+            </div>
+
+            <div class="navimob">
+                <ul>
+                    <li><a href="teampro.html">Home</a></li>
+                    <li><a href="teampro.html#main">About Us</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="https://www.google.com/maps/place/Presidential+Business+School/@27.6919587,85.3284864,17z/data=!3m1!4b1!4m5!3m4!1s0x39eb19b9406d1737:0xb1368a2c0f3f86f6!8m2!3d27.6919587!4d85.3306751">Find Us</a></li>
+                    <li class="active"><a href="#">Apply</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="forminfo">
+            <p>Please fill out this form to apply.</p>
+        </div>
+
+        <div id="main_form">
+            <form method="GET" action="action_page.php">
+          
+                <label for="fname" >First Name:</label>
+                <input type="text" id="fname" name="firstname" required>
+          
+                <label for="lname" >Last Name:</label>
+                <input type="text" id="lname" name="lastname" required>
+
+                <label for="age">Age:</label> 
+		        <input type="number" name="age">
+
+                <label for="Gender">Gender:</label> 
+		        <input type="radio" name="Gender" value="M" class="gen">Male
+		        <input type="radio" name="Gender" value="F" class="gen">Female
+                <input type="radio" name="Gender" value="O" class="gen">Other
+
+                <label for="job">Apply for:</label>
+                <select id="job" name="job">
+                    <option value="systemanalyst">System Analyst</option>
+                    <option value="webdesigner">Web Designer</option>
+                    <option value="softwaredev">Software Developer</option>
+                </select>
+          
+                <label for="strength">Strength:</label>
+                <textarea id="strength" name="strength" cols="40" rows="7"></textarea>
+          
+                <button type="submit" class="las" onclick="message()">Submit</button>
+                <button type="reset" class="las">Reset</button>
+                
+            </form>      
+        </div>  
+
+        <hr>
+        <div id="footer">
+
+            <div>
+                <a href="https://www.facebook.com
+                " class="icon"><img src="facebook.png"></a>
+                <a href="https://www.instagram.com/" class="icon"><img src="insta.png"></a>
+                <a href="mailto:posne@gmail.com" class="icon"><img src="mail.png"></a>
+                <a href="https://www.twitter.com/" class="icon"><img src="twitter.png"></a>
+            </div>
+
+            <p id="copy">&copy; Copyright all rights reserved.</p>
+
+        </div>
+        
+    </div>      
+</body>
+</html>

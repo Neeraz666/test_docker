@@ -1,0 +1,287 @@
+
+body{
+    background-color: white;
+}
+
+#header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 12em;
+    float: left;
+    margin-bottom: 2em;
+}
+
+#para{
+    text-align: center;
+    font-size: 2.5em;
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+    font-family: monospace;
+    padding-top: 2em;
+}
+
+.navides {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    clear: both;
+}
+
+#con{
+    float: right;
+}
+
+.navides a {
+    float: left;
+    color: #fff9f9;
+    text-align: center;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navides a:hover {
+    background-color:rgb(190, 144, 83);
+    color: rgb(255, 255, 255);
+}
+
+.navides a.active {
+    background-color: rgb(1, 85, 25);
+    color: white;
+}
+
+#figure{
+    text-align: center;
+    margin-top: 3em;
+}
+
+#figure img{   
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main{
+    /* border: 0.1em black solid; */
+    border-radius: 1em;
+    margin: 1em;
+    margin-top: 5em;
+    font-family: sans-serif;
+    clear: both;
+    /* box-shadow: 0.2em 0.3em; */
+    /* background-color: lightblue;*/
+}
+
+#main img{
+    max-width: 8em;
+    float: left;
+}
+
+#main p, h1{
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wel{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+    font-weight: bold;
+}
+
+.navimob{
+    display: none;
+}
+
+#main_form{
+    font-size: 1.3em;
+    /* border: 0.1em black solid; */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#forminfo{
+    font-size: 1.5em;
+    margin-left: 3em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+#main a{
+    text-decoration: none;
+    color:rgb(29, 3, 3);
+    font-size: 1.3em;
+}
+
+article{
+    border: 0.1em black solid;
+    border-radius: 1em;
+    background-color: white;
+    margin: 1em;
+    padding: 2em;
+    box-shadow: 0.1em 0.2em;
+}
+
+input, select, textarea{
+    display: block;
+}
+
+button{
+    display: inline-block;
+}
+
+.gen{
+    display: inline-block;
+    margin-left: 1em;
+}
+
+label{
+    display: block;
+    margin-top: 1em;
+}
+
+.las{
+    font-size: 1.2em;
+    margin: 1.5em;
+    margin-left: 0;
+}
+
+table, tr, th, td{
+    border: 0.1em black solid;
+    border-collapse: collapse;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 1em;
+}
+
+caption{
+    font-size: 3em;
+    margin-bottom: 1.5em;
+}
+
+table{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer img{
+    max-width: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+@media only screen and (min-width: 501px) and (max-width: 769px){
+    .navides{
+        background-color: white;
+        clear: both;
+    }
+
+    .navides a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 0.8em 1em;
+        text-decoration: none;
+        font-size: 1.1em;
+        /* border: 0.1em black solid;
+        border-radius: 1em; */
+        width: 100%;
+        
+    }
+    
+    .navides a.active {
+        background-color: rgb(175, 250, 197);
+        color: rgb(0, 0, 0);
+    }
+
+    #con{
+        float: left;
+    }
+
+    table,tr, th, td{
+        padding: 0.3em;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    body{
+        background-color: rgb(255, 255, 255) ;
+    }
+
+    #header img{
+        max-width: 7em;
+        float: none;
+        margin-bottom: -3em;
+    }
+
+    #para{
+        clear: both;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .navides{
+        display: none;
+    }
+    
+    .navimob{
+        display: block;
+        text-align: center;
+        margin-left: -2.5em;
+        /* margin-right: auto; */
+    }
+
+    .navimob li{
+        border: 0.1em rgb(182, 187, 187) solid;
+        border-radius: 1em;
+        list-style-type: none;
+        background-color: rgb(182, 187, 187);
+        margin: 0.4em;
+        width: 97%;
+    }
+
+    .navimob li a{
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        font-size: 1.4em;
+    }
+
+    /* .navimob li:hover {
+        background-color:peachpuff;
+        color: black;
+    } */
+    
+    .navimob li.active {
+        background-color: hsl(158, 41%, 61%);
+        color: white;
+    }
+
+    .icon{
+        max-width: 10%;
+    }
+
+    #forminfo{
+        margin-left: 0;
+    }
+
+    table, tr, td, th{
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    figure img{
+        max-width: 80%;
+    }
+}
